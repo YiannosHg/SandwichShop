@@ -33,6 +33,7 @@ namespace Sandwich_Shop
             this.ingredientsGroupBox = new System.Windows.Forms.GroupBox();
             this.orderButton = new System.Windows.Forms.Button();
             this.priceLabel = new System.Windows.Forms.Label();
+            this.settingsButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // breadGroupBox
@@ -76,11 +77,23 @@ namespace Sandwich_Shop
             this.priceLabel.TabIndex = 3;
             this.priceLabel.Text = "Price";
             // 
+            // settingsButton
+            // 
+            this.settingsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.settingsButton.Location = new System.Drawing.Point(12, 12);
+            this.settingsButton.Name = "settingsButton";
+            this.settingsButton.Size = new System.Drawing.Size(81, 30);
+            this.settingsButton.TabIndex = 4;
+            this.settingsButton.Text = "Settings";
+            this.settingsButton.UseVisualStyleBackColor = true;
+            this.settingsButton.Click += new System.EventHandler(this.settingsButton_Click);
+            // 
             // SandwichOrderingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.settingsButton);
             this.Controls.Add(this.priceLabel);
             this.Controls.Add(this.orderButton);
             this.Controls.Add(this.ingredientsGroupBox);
@@ -99,6 +112,7 @@ namespace Sandwich_Shop
         private System.Windows.Forms.GroupBox ingredientsGroupBox;
         private System.Windows.Forms.Button orderButton;
         private System.Windows.Forms.Label priceLabel;
+        private System.Windows.Forms.Button settingsButton;
     }
 }
 

@@ -9,6 +9,6 @@ namespace Sandwich_Shop
     class Order
     {
         public Bread bread;
-        public List<Ingredient> listOfIngredients;
+        public List<Ingredient> listOfIngredients { get; set; } = new List<Ingredient>();
     }
 }

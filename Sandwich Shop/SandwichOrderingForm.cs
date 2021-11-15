@@ -18,6 +18,8 @@ namespace Sandwich_Shop
         double breadCost = 0;
         double ingredientsCost = 0;
 
+        SettingsForm settings = new SettingsForm();
+
         List<Bread> breads = new List<Bread>();
         List<Ingredient> ingredients = new List<Ingredient>();
 
@@ -149,6 +151,11 @@ namespace Sandwich_Shop
                 // EVENTS
                 ingredientsCheckBoxes[i].Click += new System.EventHandler(IngredientsCheckBoxes_CheckedChanged);
             }
+        }
+
+        private void settingsButton_Click(object sender, EventArgs e)
+        {
+            settings.ShowDialog();
         }
     }
 }
